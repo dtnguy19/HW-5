@@ -179,7 +179,7 @@ function dealTiles() {
     // Append the selected tiles to the rack
     selectedTiles.forEach((tileLetter, index) => {
         const tileElement = $(`<div class="tile" data-tile="${tileLetter}"> </div>`);
-        tileElement.css('background-image', `url('/Users/Danny/Desktop/CODES 2023 Fall/HW5/imgs/Scrabble_Tiles/Scrabble_Tile_${tileLetter}.jpg')`);
+        tileElement.css('background-image', `url('imgs/Scrabble_Tiles/Scrabble_Tile_${tileLetter}.jpg')`);
 
         // Add a click event for the blank tile
         if (tileLetter === 'Blank') {
@@ -261,7 +261,7 @@ function openTilePicker() {
     // Append each remaining tile to the modal content
     remainingTiles.forEach(tileLetter => {
         const tileElement = $('<div class="tile"></div>');
-        tileElement.css('background-image', `url('/Users/Danny/Desktop/CODES 2023 Fall/HW5/imgs/Scrabble_Tiles/Scrabble_Tile_${tileLetter}.jpg')`);
+        tileElement.css('background-image', `url('imgs/Scrabble_Tiles/Scrabble_Tile_${tileLetter}.jpg')`);
 
         // Add a click event to choose the tile
         tileElement.click(function () {
@@ -294,7 +294,7 @@ function replaceBlankTile(newTile) {
     blankTile.css('background-image', 'none');
 
     // Set the new background image and text for the chosen tile
-    blankTile.css('background-image', `url('/Users/Danny/Desktop/CODES 2023 Fall/HW5/imgs/Scrabble_Tiles/Scrabble_Tile_${newTile}.jpg')`);
+    blankTile.css('background-image', `url('imgs/Scrabble_Tiles/Scrabble_Tile_${newTile}.jpg')`);
 
     blankTile.attr('data-tile', newTile);
 
