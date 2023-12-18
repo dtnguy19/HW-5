@@ -1,0 +1,148 @@
+.board {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+	gap: 30px;
+}
+
+.rack {
+    display: grid;
+    grid-template-columns: repeat(7, 60px);
+    gap: 10px;
+    padding: 50px;
+    background-image: url('/Users/Danny/Desktop/CODES 2023 Fall/HW5/imgs/scrabbleTileHolder.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 800px;
+    margin-left: 650px;
+}
+
+.deal-container {
+	margin-left: 1300px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+	z-index: 2;
+}
+
+.drop-target {
+    width: 50px; 
+    height: 50px;
+    border: 2px solid #000; 
+    position: relative; 
+	z-index: 1;
+}
+
+.special-title {
+    position: absolute;
+    top: -20px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    font-size: 12px;
+}
+
+.Triple-Word{
+	border-color: blue;
+}
+
+.Triple-Letter{
+	border-color: red;
+
+}
+.Double-Word{
+	border-color: green;
+}
+
+#explanation-box {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.legend-item {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    border: 1px solid #000;
+}
+
+#total-score{
+	font-size: 18px; 
+	margin-top: 10px; 
+	text-align: center;
+}
+
+
+#calculate-button {
+  background-color: #4caf50;
+  color: white; 
+  padding: 10px 20px;
+  font-size: 16px; 
+  border: none; 
+  cursor: pointer;
+  border-radius: 5px; 
+  margin-left: 1300px;
+}
+
+#points-display {
+  font-size: 18px; 
+  margin-top: 10px; 
+  text-align: center;
+}
+
+body {
+  font-family: 'Arial', sans-serif; 
+}
+
+#calculate-button:hover {
+  background-color: #45a049; 
+}
+
+#deal-button{
+	background-color: #4caf50;
+	color: white; 
+	padding: 10px 20px;
+	font-size: 16px; 
+	border: none; 
+	cursor: pointer;
+	border-radius: 5px; 
+}
+#deal-button:hover {
+  background-color: #45a049; 
+}
