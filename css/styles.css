@@ -4,7 +4,9 @@
     padding: 20px;
 	gap: 30px;
 }
-
+#tile-rack {
+    background-image: url('/imgs/scrabbleTileHolder.png');
+}
 .rack {
     display: grid;
     grid-template-columns: repeat(7, 60px);
