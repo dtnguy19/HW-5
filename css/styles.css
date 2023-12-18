@@ -5,12 +5,12 @@
 	gap: 30px;
 }
 
-}
 .rack {
     display: grid;
     grid-template-columns: repeat(7, 60px);
     gap: 10px;
     padding: 50px;
+    background-image: url('/imgs/scrabbleTileHolder.png');
     background-size: contain;
     background-repeat: no-repeat;
     max-width: 800px;
