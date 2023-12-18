@@ -10,7 +10,7 @@
     grid-template-columns: repeat(7, 60px);
     gap: 10px;
     padding: 50px;
-    background-image: url('/Users/Danny/Desktop/CODES 2023 Fall/HW5/imgs/scrabbleTileHolder.png');
+    background-image: url('imgs/scrabbleTileHolder.png');
     background-size: contain;
     background-repeat: no-repeat;
     max-width: 800px;
