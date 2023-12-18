@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Scrabble Game</title>
+</head>
+<body>
+
+<div id="tile-rack" class="rack">
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+</div>
+
+<div class="deal-container">
+    <button id="deal-button">Deal Tiles</button>
+</div>
+
+<!-- Game Board -->
+<div id="game-board" class="board">
+	<!-- Drop targets for the tiles -->
+	<div class="drop-target"></div>
+	<div class="drop-target"></div>
+	<div class="drop-target"></div>
+	<div class="drop-target"></div>
+	<div class="drop-target"></div>
+	<div class="drop-target"></div>
+	<div class="drop-target"></div>
+</div>
+<div id="explanation-box">
+    <h2>Color Legend</h2>
+    <div class="legend-item">
+        <div class="legend-color" style="background-color: red;"></div>
+        <span>Triple Letter</span>
+    </div>
+    <div class="legend-item">
+        <div class="legend-color" style="background-color: blue;"></div>
+        <span>Triple Word</span>
+    </div>
+    <div class="legend-item">
+        <div class="legend-color" style="background-color: green;"></div>
+        <span>Double Word</span>
+    </div>
+</div>
+
+<div id="total-score">Total Score: 0</div>
+
+
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include jQuery UI -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="jss/javascript.js"></script>
+</body>
+</html>
